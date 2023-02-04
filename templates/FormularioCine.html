@@ -1,0 +1,46 @@
+{% extends "layout1.html"%}
+{%block content1%}
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Cine</title>
+  </head>
+    <body>
+        <form class="from-horizontal" name="form1" action="/resultado1" method="post">
+            <center><h1 text="center">Cinepolis</h1></center>
+                <fieldset>
+                    <legend>Entrada</legend>
+                    <label for="txtNom" class="control-label">Nombre</label>
+                    <br>
+                    <input type="text" name="txtNom" value="">
+                    <br>
+                    <label for="txtNumCom" class="control-label">Cantidad de Compradores</label>
+                    <br>
+                    <input type="text" name="txtNumCom" value="">
+                    <br>
+                    Tarjeta Cineco
+                    <br>
+                    <div>
+                        <input type="radio" name="rdb" value="Si"> Si
+                    </div>
+                    <div>
+                        <input type="radio" name="rdb" value="No"> No
+                    </div>
+                    <br>
+                    <label for="txtNumBol" class="control-label">Cantidad de Boletas</label>
+                    <br>
+                    <input type="text" name="txtNumBol" value="">
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Acciones</legend>
+                    <button type="submit" class="btn btn-default btn-primary">
+                        <icon class="icon-book icon-white"></icon>Procesar
+                    </button>
+                </fieldset>
+        </form>
+    </body>
+    </html>
+{%endblock%}

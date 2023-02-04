@@ -1,0 +1,10 @@
+{% extends "layout1.html"%}
+{%block content1%}
+{% include "sweetalert.html" %}
+<div class="control-group">
+    <label for="txtRes" class="control-label">Resultado: </label>
+    <div class="controls">
+        <textarea type="text" style="height: 7em; width: 15em" name="txtRes" placeholder="Resultado" value="">{{cadena}}</textarea>
+    </div>
+</div>
+{%endblock%}
